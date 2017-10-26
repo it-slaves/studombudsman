@@ -10,4 +10,4 @@ from django.conf.urls import url
 
 
 def index(request):
-    return render(request, '/studombusman/index.html')
+    return render(request, 'studombudsman/index.html')

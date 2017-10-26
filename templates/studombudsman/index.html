@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,13 +15,13 @@
         <link rel="shortcut icon" href="images/favicon.png">
 
         <!-- CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/style-responsive.css">
-        <link rel="stylesheet" href="css/animate.min.css">
-        <link rel="stylesheet" href="css/vertical-rhythm.min.css">
-        <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="{% static 'studombudsman/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'studombudsman/css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'studombudsman/css/style-responsive.css' %}">
+        <link rel="stylesheet" href="{% static 'studombudsman/css/animate.min.css' %}">
+        <link rel="stylesheet" href="{% static 'studombudsman/css/vertical-rhythm.min.css' %}">
+        <link rel="stylesheet" href="{% static 'studombudsman/css/owl.carousel.css' %}">
+        <link rel="stylesheet" href="{% static 'studombudsman/css/magnific-popup.css' %}">
 
     </head>
     <body class="appear-animate">
@@ -34,7 +36,7 @@
         <div class="page" id="top">
 
             <!-- Home Section -->
-            <section class="home-section bg-dark parallax-2" data-background="images/logo.png" id="home">
+            <section class="home-section bg-dark parallax-2" data-background="{% static 'studombudsman/images/logo.png' %}" id="home">
                 <div class="js-height-full container">
 
                     <!-- Hero Content -->
@@ -70,7 +72,7 @@
                     <!-- Logo ( * your text or image into link tag *) -->
                     <div class="nav-logo-wrap local-scroll">
                         <a href="mp-index.html" class="logo">
-                            <img src="images/logo.png" alt="" />
+                            <img src="{% static 'studombudsman/images/logo.png' %}" alt="" />
                         </a>
                     </div>
 
@@ -905,7 +907,7 @@
                         </div>
 
                         <div class="col-sm-6 banner-image wow fadeInUp">
-                            <img src="images/promo-1.png" alt="" />
+                            <img src="{% static 'studombudsman/images/promo-1.png' %}" alt="" />
                         </div>
 
                     </div>
@@ -1303,7 +1305,7 @@
                         <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50 wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s">
 
                             <div class="post-prev-img">
-                                <a href="blog-single-sidebar-right.html"><img src="images/blog/post-prev-1.jpg" alt="" /></a>
+                                <a href="blog-single-sidebar-right.html"><img src="{% static 'studombudsman/images/blog/post-prev-1.jpg' %}" alt="" /></a>
                             </div>
 
                             <div class="post-prev-title font-alt">
@@ -1330,7 +1332,7 @@
                         <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50 wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
 
                             <div class="post-prev-img">
-                                <a href="blog-single-sidebar-right.html"><img src="images/blog/post-prev-2.jpg" alt="" /></a>
+                                <a href="blog-single-sidebar-right.html"><img src="{% static 'studombudsman/images/blog/post-prev-2.jpg' %}" alt="" /></a>
                             </div>
 
                             <div class="post-prev-title font-alt">
@@ -1357,7 +1359,7 @@
                         <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50 wow fadeIn" data-wow-delay="0.3s" data-wow-duration="2s">
 
                             <div class="post-prev-img">
-                                <a href="blog-single-sidebar-right.html"><img src="images/blog/post-prev-3.jpg" alt="" /></a>
+                                <a href="blog-single-sidebar-right.html"><img src="{% static 'studombudsman/images/blog/post-prev-3.jpg' %}" alt="" /></a>
                             </div>
 
                             <div class="post-prev-title font-alt">
@@ -1469,7 +1471,7 @@
 
                     <!-- Footer Logo -->
                     <div class="local-scroll mb-30 wow fadeInUp" data-wow-duration="1.5s">
-                        <a href="#top"><img src="images/logo.png" width="78" height="36" alt="" /></a>
+                        <a href="#top"><img src="{% static 'studombudsman/images/logo.png' %}" width="78" height="36" alt="" /></a>
                     </div>
                     <!-- End Footer Logo -->
 
@@ -1517,32 +1519,32 @@
 
 
         <!-- JS -->
-        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/SmoothScroll.js"></script>
-        <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
-        <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
-        <script type="text/javascript" src="js/jquery.viewport.mini.js"></script>
-        <script type="text/javascript" src="js/jquery.countTo.js"></script>
-        <script type="text/javascript" src="js/jquery.appear.js"></script>
-        <script type="text/javascript" src="js/jquery.sticky.js"></script>
-        <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
-        <script type="text/javascript" src="js/jquery.fitvids.js"></script>
-        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-        <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-        <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
-        <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript" src="{% static 'studombudsman/js/jquery-1.11.2.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'studombudsman/js/jquery.easing.1.3.js' %}"></script>
+        <script type="text/javascript" src="{% static 'studombudsman/js/bootstrap.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'studombudsman/js/SmoothScroll.js' %}"></script>
+        <script type="text/javascript" src="{% static 'studombudsman/js/jquery.scrollTo.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'studombudsman/js/jquery.localScroll.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'studombudsman/js/jquery.viewport.mini.js' %}"></script>
+        <script type="text/javascript" src="{% static 'studombudsman/js/jquery.countTo.js' %}"></script>
+        <script type="text/javascript" src="{% static 'studombudsman/js/jquery.appear.js' %}"></script>
+        <script type="text/javascript" src="{% static 'studombudsman/js/jquery.sticky.js' %}"></script>
+        <script type="text/javascript" src="{% static 'studombudsman/js/jquery.parallax-1.1.3.js' %}"></script>
+        <script type="text/javascript" src="{% static 'studombudsman/js/jquery.fitvids.js' %}"></script>
+        <script type="text/javascript" src="{% static 'studombudsman/js/owl.carousel.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'studombudsman/js/isotope.pkgd.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'studombudsman/js/imagesloaded.pkgd.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'studombudsman/js/jquery.magnific-popup.min.js' %}"></script>
         <!-- Replace test API Key "AIzaSyAZsDkJFLS0b59q7cmW0EprwfcfUA8d9dg" with your own one below
         **** You can get API Key here - https://developers.google.com/maps/documentation/javascript/get-api-key -->
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZsDkJFLS0b59q7cmW0EprwfcfUA8d9dg"></script>
-        <script type="text/javascript" src="js/gmap3.min.js"></script>
-        <script type="text/javascript" src="js/wow.min.js"></script>
-        <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
-        <script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script>
-        <script type="text/javascript" src="js/all.js"></script>
-        <script type="text/javascript" src="js/contact-form.js"></script>
-        <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
+        <script type="text/javascript" src="{% static 'studombudsman/js/gmap3.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'studombudsman/js/wow.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'studombudsman/js/masonry.pkgd.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'studombudsman/js/jquery.simple-text-rotator.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'studombudsman/js/all.js' %}"></script>
+        <script type="text/javascript" src="{% static 'studombudsman/js/contact-form.js' %}"></script>
+        <script type="text/javascript" src="{% static 'studombudsman/js/jquery.ajaxchimp.min.js' %}"></script>
         <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
 
     </body>
