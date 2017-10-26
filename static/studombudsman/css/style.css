@@ -359,6 +359,7 @@ img:not([draggable]), embed, object, video{
 
 body{
     color: #111;
+    background-color: #11888e;
     font-size: 14px;
     font-family: "Open Sans", arial, sans-serif;
     line-height: 1.6;
