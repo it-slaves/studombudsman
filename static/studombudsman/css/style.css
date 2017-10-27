@@ -3876,6 +3876,9 @@ a.logo:hover{
     color: #111;
 }
 
+.form select.newsletter-field{
+    width: 50px;
+}
 
 /* ==============================
    Contact section
