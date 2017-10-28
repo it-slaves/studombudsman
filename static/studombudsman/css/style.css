@@ -3877,7 +3877,7 @@ a.logo:hover{
 }
 
 .form select.newsletter-field{
-    width: 50px;
+    max-width: 293px;
 }
 
 /* ==============================
