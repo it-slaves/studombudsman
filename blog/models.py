@@ -24,10 +24,6 @@ class News(models.Model):
         help_text="Publication date of the news"
     )
     announce = models.TextField(
-
-
-
-
         help_text="Announce of the news"
     )
     text = models.TextField(
@@ -37,3 +33,6 @@ class News(models.Model):
         blank=True,
         help_text="Image of the news"
     )
+
+    class Meta:
+        verbose_name_plural = 'News'
