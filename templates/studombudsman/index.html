@@ -35,6 +35,10 @@
         <!-- Page Wrap -->
         <div class="page" id="top">
 
+
+            {% block body %}
+
+
             <!-- Navigation panel -->
             <nav class="main-nav dark transparent stick-fixed">
                 <div class="full-wrapper relative clearfix">
@@ -54,19 +58,19 @@
                     <div class="inner-nav desktop-nav">
                         <ul class="clearlist">
                             <li>
-                                <a href="#about" class="mn-has-sub">О нас</a>
+                                <a href="/#about">О нас</a>
                             </li>
                             <li>
-                                <a href="#howItWorks" class="mn-has-sub">Как мы работаем</a>
+                                <a href="/#howItWorks">Как мы работаем</a>
                             </li>
                             <li>
-                                <a href="#form" class="mn-has-sub">Форма</a>
+                                <a href="/#form">Форма</a>
                             </li>
                             <li>
-                                <a href="#news" class="mn-has-sub">Новости</a>
+                                <a href="/#news">Новости</a>
                             </li>
                             <li>
-                                <a href="#contact" class="mn-has-sub">Контакты</a>
+                                <a href="/#contact">Контакты</a>
                             </li>
 
                         </ul>
@@ -749,6 +753,9 @@
             <!-- End Contact Section -->
 
 
+            {% endblock %}
+
+
             <!-- Foter -->
             <footer class="page-section bg-dark footer pb-60">
                 <div class="container">
@@ -761,11 +768,10 @@
 
                     <!-- Social Links -->
                     <div class="footer-social-links mb-110 mb-xs-60">
+                        <a href="#" title="VK" target="_blank"><i class="fa fa-vk"></i></a>
                         <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
                         <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-                        <a href="#" title="Behance" target="_blank"><i class="fa fa-behance"></i></a>
                         <a href="#" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>
-                        <a href="#" title="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a>
                     </div>
                     <!-- End Social Links -->
 
@@ -774,12 +780,12 @@
 
                         <!-- Copyright -->
                         <div class="footer-copy font-alt">
-                            <a href="http://themeforest.net/user/theme-guru/portfolio" target="_blank">&copy; Rhythm 2017</a>.
+                            &copy; Alexander Pros
                         </div>
                         <!-- End Copyright -->
 
                         <div class="footer-made">
-                            Made with love for great people.
+                            Made for studombudsman.
                         </div>
 
                     </div>
