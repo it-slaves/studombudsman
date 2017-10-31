@@ -127,7 +127,7 @@ Section Text:       15px/1.7 "Open Sans", arial, sans-serif;
 
 ::-moz-selection{ color: #fff; background:#000; }
 ::-webkit-selection{ color: #fff;    background:#000; }
-::selection{ color: #fff;    background:#000; }
+::selection{ color: #fff;    background:#11888e; }
 
 .animate, .animate *{
     -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
