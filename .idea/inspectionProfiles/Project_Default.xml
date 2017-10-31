@@ -1,0 +1,25 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="box.models.Box.objects" />
+          <option value="box.models.Illumination.objects" />
+          <option value="box.models.Watering.DoesNotExist" />
+          <option value="box.models.Illumination.DoesNotExist" />
+          <option value="box.models.Plant.objects" />
+          <option value="box.models.Watering.objects" />
+          <option value="box.models.CareMethod.objects" />
+          <option value="box.models.Box.DoesNotExist" />
+          <option value="box.models.Illumination.DoesNotExists" />
+          <option value="Warning.DoesNotExists" />
+          <option value="box.models.CareMethod.DoesNotExists" />
+          <option value="box.models.Watering.DoesNotExists" />
+          <option value="blog.models.News.objects" />
+          <option value="blog.models.News.DoesNotExist" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
