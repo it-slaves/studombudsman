@@ -425,56 +425,21 @@
                                 <h2 class="section-title font-alt mb-70 mb-sm-40">
                                     Отправьте заявку
                                 </h2>
-
-                                <div class="mb-20">
-                                    <select class="newsletter-field form-control input-lg round mb-xs-10" pattern=".{5,100}" style="max-width: 293px;" required>
-                                        <option value="" disabled selected>Выберите проблему</option>
-                                        {% for problem in problems_list %}
-                                            <option>{{problem.name}}</option>
-                                        {% endfor %}
-                                        <option>Другое</option>
-                                    </select>
-                                </div>
-
-                                <div class="mb-20">
-                                    <input placeholder="Имя" class="newsletter-field form-control input-lg round mb-xs-10" type="text" pattern=".{5,100}" required/>
-                                </div>
-
-                                <div class="mb-20">
-                                    <input placeholder="Университет" class="newsletter-field form-control input-lg round mb-xs-10" type="text" pattern=".{5,100}" required/>
-                                </div>
-
-                                <div class="mb-20">
-                                    <input placeholder="Email" class="newsletter-field form-control input-lg round mb-xs-10" type="email" pattern=".{5,100}" required/>
-                                </div>
-
-                                <div class="mb-20">
-                                    <select class="newsletter-field form-control input-lg round mb-xs-10" pattern=".{5,100}" style="max-width: 293px;" required>
-                                        <option value="" disabled selected>Как с вами связаться</option>
-                                        <option>VK</option>
-                                        <option>Facebook</option>
-                                        <option>Telegram</option>
-                                    </select>
-                                </div>
-
-                                <div class="mb-20">
-                                    <input placeholder="Ссылка" class="newsletter-field form-control input-lg round mb-xs-10" type="text" pattern=".{5,100}" required/>
-                                </div>
-                                
-                                <div class="mb-20">
-                                    <button type="submit" class="btn btn-mod btn-medium btn-round mb-xs-10">
-                                        Оставить заявку
-                                    </button>
-                                </div>
-
-                                <div class="form-tip">
-                                    <i class="fa fa-info-circle"></i> Please trust us, we will never send you spam
-                                </div>
-
-                                <div id="subscribe-result"></div>
-
                             </div>
                         </div>
+
+                        <script id="bx24_form_inline" data-skip-moving="true">
+                                (function(w,d,u,b){w['Bitrix24FormObject']=b;w[b] = w[b] || function(){arguments[0].ref=u;
+                                        (w[b].forms=w[b].forms||[]).push(arguments[0])};
+                                        if(w[b]['forms']) return;
+                                        s=d.createElement('script');r=1*new Date();s.async=1;s.src=u+'?'+r;
+                                        h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+                                })(window,document,'https://b24-cg3kdq.bitrix24.ru/bitrix/js/crm/form_loader.js','b24form');
+
+                                b24form({"id":"8","lang":"ru","sec":"ap57qr","type":"inline","presets": {"cause": "cause1"}});
+                        </script>
+
+
                     </form>
 
                 </div>
@@ -500,11 +465,11 @@
                         <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50 wow fadeIn" data-wow-delay="0.1s" data-wow-duration="2s">
 
                             <div class="post-prev-img">
-                                <a href="/blog/{{news_0.id}}" target="_blank"><img src="{% static 'studombudsman/images/blog/post-prev-1.jpg' %}" alt="" /></a>
+                                <a href="/blog/{{news_0.id}}"><img src="{{news_0.image_link}}" alt="" /></a>
                             </div>
 
                             <div class="post-prev-title font-alt">
-                                <a href="/blog/{{news_0.id}}" target="_blank">{{news_0.name}}</a>
+                                <a href="/blog/{{news_0.id}}">{{news_0.name}}</a>
                             </div>
 
                             <div class="post-prev-info font-alt">
@@ -516,7 +481,7 @@
                             </div>
 
                             <div class="post-prev-more">
-                                <a href="/blog/{{news_0.id}}" target="_blank" class="btn btn-mod btn-gray btn-round">Подробнее <i class="fa fa-angle-right"></i></a>
+                                <a href="/blog/{{news_0.id}}" class="btn btn-mod btn-gray btn-round">Подробнее <i class="fa fa-angle-right"></i></a>
                             </div>
 
                         </div>
@@ -526,11 +491,11 @@
                         <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50 wow fadeIn" data-wow-delay="0.2s" data-wow-duration="2s">
 
                             <div class="post-prev-img">
-                                <a href="/blog/{{news_1.id}}" target="_blank"><img src="{% static 'studombudsman/images/blog/post-prev-2.jpg' %}" alt="" /></a>
+                                <a href="/blog/{{news_1.id}}"><img src="{{news_1.image_link}}" alt="" /></a>
                             </div>
 
                             <div class="post-prev-title font-alt">
-                                <a href="/blog/{{news_1.id}}" target="_blank">{{news_1.name}}</a>
+                                <a href="/blog/{{news_1.id}}">{{news_1.name}}</a>
                             </div>
 
                             <div class="post-prev-info font-alt">
@@ -542,7 +507,7 @@
                             </div>
 
                             <div class="post-prev-more">
-                                <a href="/blog/{{news_1.id}}" target="_blank" class="btn btn-mod btn-gray btn-round">Подробнее <i class="fa fa-angle-right"></i></a>
+                                <a href="/blog/{{news_1.id}}" class="btn btn-mod btn-gray btn-round">Подробнее <i class="fa fa-angle-right"></i></a>
                             </div>
 
                         </div>
@@ -552,11 +517,11 @@
                         <div class="col-sm-6 col-md-4 col-lg-4 mb-md-50 wow fadeIn" data-wow-delay="0.3s" data-wow-duration="2s">
 
                             <div class="post-prev-img">
-                                <a href="/blog/{{news_2.id}}" target="_blank"><img src="{% static 'studombudsman/images/blog/post-prev-3.jpg' %}" alt="" /></a>
+                                <a href="/blog/{{news_2.id}}"><img src="{{news_2.image_link}}" alt="" /></a>
                             </div>
 
                             <div class="post-prev-title font-alt">
-                                <a href="/blog/{{news_2.id}}" target="_blank">{{news_2.name}}</a>
+                                <a href="/blog/{{news_2.id}}">{{news_2.name}}</a>
                             </div>
 
                             <div class="post-prev-info font-alt">
@@ -568,7 +533,7 @@
                             </div>
 
                             <div class="post-prev-more">
-                                <a href="/blog/{{news_2.id}}" target="_blank" class="btn btn-mod btn-gray btn-round">Подробнее <i class="fa fa-angle-right"></i></a>
+                                <a href="/blog/{{news_2.id}}" class="btn btn-mod btn-gray btn-round">Подробнее <i class="fa fa-angle-right"></i></a>
                             </div>
 
                         </div>

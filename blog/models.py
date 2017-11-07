@@ -33,7 +33,8 @@ class News(models.Model):
     text = models.TextField(
         help_text="Text of the news"
     )
-    image = models.ImageField(
+    image_link = models.CharField(
+        max_length=100,
         blank=True,
-        help_text="Image of the news"
+        help_text="Link to image of news"
     )
